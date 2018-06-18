@@ -1,0 +1,39 @@
+#formulario_login {
+    background-color: #bb1e11;
+    width: 400px;
+    margin: 50px 0;
+    margin: 50px auto;
+}
+#formulario_login form{
+	text-align: center;
+	padding-bottom: 50px;
+}
+#formulario_login form label{
+	color: #fff;
+	font-size: 12px;
+}
+#formulario_login form input{
+	padding: 4px 15px;
+    border: 0;	
+}
+
+#formulario_login form a{
+    color: #fff;
+    font-size: 11px;
+}
+#resumen_pedido {
+  background-color: gray;
+}
+
+#datos_pago {
+  background-color: lightblue;
+}
+#formulario_login form  input[type="submit"]{
+    background: #bb1e11;
+    color: #fff;
+	font-size: 15px;
+    padding: 4px 20px;
+    cursor: pointer;
+    border: 1px solid #fff !important;
+    margin-top: 20px;
+}

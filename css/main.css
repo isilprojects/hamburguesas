@@ -1,0 +1,192 @@
+		.logo img{
+			width: 170px;
+		}
+		.main-navigation{
+			background: #bb1e11;
+		}
+		.main-navigation:before {
+		    background: #bb1e11;
+		    box-shadow: 9999px 0 0 #bb1e11;
+		    border-left: 9999px solid #bb1e11;
+		    bottom: 0;
+		    content: '';
+		    left: -9999px;
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    z-index: -1;
+		}
+		.main-navigation ul{
+			text-align: center;
+			margin-bottom: 0;
+		}
+		.main-navigation ul li{
+			display: inline;
+		}
+		.main-navigation ul li a:hover {
+		    background: #fff;
+		    color: #bb1e11;
+		    font-weight: 700;
+		    transition: ease all 0.3s;
+		}
+			.main-navigation ul li a {
+			    color: #fff;
+			    padding: 8px 30px;
+			    margin: 0 50px;
+			    text-transform: uppercase;
+			    display: inline-block;
+			    text-decoration: none;
+			    transition: ease all 0.3s;
+			}
+		.r-0{
+			padding-right: 0 !important;
+		}
+		.l-0{
+			padding-left: 0 !important;
+		}
+		section#list .row {
+		    padding: 50px 0;
+		}
+		.views-row {
+		    margin-bottom: 30px;
+		    cursor: pointer;
+		}
+		.views-row:hover h2 {
+		    color: #bb1e11;
+		}
+		.views-row h2 {
+		    font-size: 20px;
+		    color: #525252;
+		    margin-top: 7px;
+		}
+		section#form {
+		    width: 650px;
+		    height: 540px;
+		    position: absolute;
+		    right: 0;
+		    left: 0;
+		    top: 0;
+		    bottom: 0;
+		    margin: auto;
+		    z-index: 31;
+		    display: none;
+		}
+		section#form:before {
+		    content: "";
+		    background: rgba(0, 0, 0, 0.30196078431372547);
+		    position: fixed;
+		    right: 0;
+		    left: 0;
+		    bottom: 0;
+		    top: 0;
+		    z-index: -2;
+		}
+		form img {
+		    float: right;
+		    margin-top: -45px;
+		    margin-right: 50px;
+		}
+
+		p#hTitle {
+		    font-size: 30px;
+		    color: #333;
+		    font-weight: 700;
+		}
+
+		input#cHambuguesa {
+		    width: 50px;
+		    border: 0;
+		    border-radius: 5px;
+		    background: #e8e8e8;
+		    padding: 5px;
+		}
+
+
+		.adicionales, .bebidas {
+		    float: left;
+		}
+		.adicionales label, 
+		.bebidas label{
+			width: 100%;
+		}
+		.canHamb{
+			display: inline-block;
+			margin-bottom: 25px;
+		}
+		.pagar {
+		    text-align: center;
+		    display: inline-block;
+		    width: 100%;
+		    margin-top: 25px;
+		}
+		.labelprecio {
+		    color: #525252;
+		    font-size: 12px;
+		}
+		.precio {
+		    font-weight: 700;
+		}
+
+		.resumen-pedido,
+		.datos-pago {
+		    padding: 50px 70px;
+		    width: 50%;
+		    float: left;
+		}
+		#form-confir label {
+		    width: 150px;
+		}
+		form#form-confir {
+		    background: #ccc;
+		    padding: 50px 0;
+		    border-radius: 10px;
+		    text-align: center;
+		}
+		form#form-confir input {
+		    padding: 3px 8px;
+		}
+		input[type="submit"] {
+		    border: 0;
+		    background: #bb1e11;
+		    color: #fff;
+		    padding: 7px 20px;
+		    cursor: pointer;
+		}
+		input[type="submit"]:hover {
+		    background: #da4953;
+		}
+
+		section#form form {
+		    background: #fff;
+		    border-radius: 10px;
+		    padding: 20px;
+		}
+		footer{
+			display: inline-block;
+			width: 100%;
+		}
+		footer .float-left{
+			background: #bb1e11;
+		}
+		footer .float-left p {
+		    color: #fff;
+		    text-transform: uppercase;
+		    margin: 0;
+		    font-size: 15px;
+		    line-height: 50px;
+		}
+		footer ul.menu_footer li{
+			display: inline;
+			list-style: none;
+		}
+		footer ul.menu_footer li a {
+		    color: #333;
+		    text-align: left;
+		    font-size: 12px;
+		    margin: 0 20px;
+		}
+		footer .float-right {
+		    float: right!important;
+		    border-top: 1px solid #ccc;
+		    padding-top: 10px;
+		}
