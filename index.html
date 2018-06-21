@@ -35,7 +35,7 @@
 					<h2>Producto 1</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 9,90</span>
+					    <span class="precio">S/. <b id="pCosto">9.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -43,7 +43,7 @@
 					<h2>Producto 2</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 10,90</span>
+					    <span class="precio">S/. <b id="pCosto">10.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -51,7 +51,7 @@
 					<h2>Producto 3</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 9,90</span>
+					    <span class="precio">S/. <b id="pCosto">9.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -59,7 +59,7 @@
 					<h2>Producto 4</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 11,90</span>
+					    <span class="precio">S/. <b id="pCosto">11.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -67,7 +67,7 @@
 					<h2>Producto 5</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 9,90</span>
+					    <span class="precio">S/. <b id="pCosto">9.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -75,7 +75,7 @@
 					<h2>Producto 6</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 12,90</span>
+					    <span class="precio">S/. <b id="pCosto">12.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -83,7 +83,7 @@
 					<h2>Producto 7</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 14,90</span>
+					    <span class="precio">S/. <b id="pCosto">14.90</b></span>
         			</div>
 				</div>
 				<div class="views-row text-center col-md-3 col-sm-6 col-xs-12">
@@ -91,7 +91,7 @@
 					<h2>Producto 8</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
-					    <span class="precio">S/. 16,90</span>
+					    <span class="precio">S/. <b id="pCosto">16.90</b></span>
         			</div>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 	</section>
 
 	<section id="form">
-			<form name="miform" id="miform">
+			<form name="miform" id="miform" action="pago.html">
 				<span class="close">X</span>
 				<h5>Producto elegido: </h5>
 				<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
@@ -112,18 +112,18 @@
 				<div class="bebidas col-md-6">
 					<label>Agregar bebida</label>
 					<input id="ad" type="checkbox" name="bebida-cocacola"  onclick="calcularPrecio()" value="1.00"> Cocacola (S/. 1.00)<br>
-  					<input id="ad" type="checkbox" name="bebida-pepsi"  onclick="calcularPrecio()" value="1.50"> Pepsi (S/. 1.00)<br>
+  					<input id="ad" type="checkbox" name="bebida-pepsi"  onclick="calcularPrecio()" value="1.50"> Pepsi (S/. 1.50)<br>
   					<input id="ad" type="checkbox" name="bebida-sprite"  onclick="calcularPrecio()" value="1.00"> Sprite (S/. 1.00)<br>
 				</div>
 
 				<div class="adicionales col-md-6">
 					<label>Agregar Adicionales</label>
 					<input id="ad" type="checkbox" name="adicional-ensalada"  onclick="calcularPrecio()" value="4.00"> Ensalada (S/. 4.00)<br>
-  					<input id="ad" type="checkbox" name="adicional-papitas" onclick="calcularPrecio()"  value="2.50"> Papitas (S/. 2.00)<br>
+  					<input id="ad" type="checkbox" name="adicional-papitas" onclick="calcularPrecio()"  value="2.50"> Papitas (S/. 2.50)<br>
   					<input id="ad" type="checkbox" name="adicional-huevo"  onclick="calcularPrecio()" value="1.00"> Huevo (S/. 1.00)<br>
 				</div>
 				<div class="pagar">
-					<p>Total a pagar: S/.  <b id="pTotal">00.00</b></p>
+					<p>Total a pagar: S/.  <b id="pTotal"></b></p>
 					<input type="submit" value="Pagar">
 				</div>
 
