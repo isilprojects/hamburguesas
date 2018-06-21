@@ -99,7 +99,7 @@
 	</section>
 
 	<section id="form">
-			<form action="pago.php">
+			<form name="miform" id="miform">
 				<span class="close">X</span>
 				<h5>Producto elegido: </h5>
 				<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
@@ -111,25 +111,19 @@
 
 				<div class="bebidas col-md-6">
 					<label>Agregar bebida</label>
-					<input type="checkbox" name="bebida" value="Cocacola"> Cocacola<br>
-  					<input type="checkbox" name="bebida" value="Pepsi"> Pepsi<br>
-  					<input type="checkbox" name="bebida" value="Sprite"> Sprite<br>
-					<input type="checkbox" name="bebida" value="Cocacola"> Cocacola (S/. 1.00)<br>
-  					<input type="checkbox" name="bebida" value="Pepsi" checked> Pepsi (S/. 1.00)<br>
-  					<input type="checkbox" name="bebida" value="Sprite"> Sprite (S/. 1.00)<br>
+					<input id="ad" type="checkbox" name="bebida-cocacola"  onclick="calcularPrecio()" value="1.00"> Cocacola (S/. 1.00)<br>
+  					<input id="ad" type="checkbox" name="bebida-pepsi"  onclick="calcularPrecio()" value="1.50"> Pepsi (S/. 1.00)<br>
+  					<input id="ad" type="checkbox" name="bebida-sprite"  onclick="calcularPrecio()" value="1.00"> Sprite (S/. 1.00)<br>
 				</div>
 
 				<div class="adicionales col-md-6">
 					<label>Agregar Adicionales</label>
-					<input type="checkbox" name="adicional" value="Ensalada"> Ensalada<br>
-  					<input type="checkbox" name="adicional" value="Papitas"> Papitas<br>
-  					<input type="checkbox" name="adicional" value="Huevo"> Huevo<br>
-					<input type="checkbox" name="adicional" value="Ensalada" checked> Ensalada (S/. 4.00)<br>
-  					<input type="checkbox" name="adicional" value="Papitas"> Papitas (S/. 2.00)<br>
-  					<input type="checkbox" name="adicional" value="Huevo"> Huevo (S/. 1.00)<br>
+					<input id="ad" type="checkbox" name="adicional-ensalada"  onclick="calcularPrecio()" value="4.00"> Ensalada (S/. 4.00)<br>
+  					<input id="ad" type="checkbox" name="adicional-papitas" onclick="calcularPrecio()"  value="2.50"> Papitas (S/. 2.00)<br>
+  					<input id="ad" type="checkbox" name="adicional-huevo"  onclick="calcularPrecio()" value="1.00"> Huevo (S/. 1.00)<br>
 				</div>
 				<div class="pagar">
-					<p>Total a pagar: <b>S/. 00.00</b></p>
+					<p>Total a pagar: S/.  <b id="pTotal">00.00</b></p>
 					<input type="submit" value="Pagar">
 				</div>
 

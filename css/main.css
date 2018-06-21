@@ -62,7 +62,7 @@
 		section#form {
 		    width: 650px;
 		    height: 540px;
-		    position: absolute;
+		    position: fixed;
 		    right: 0;
 		    left: 0;
 		    top: 0;

@@ -1,5 +1,16 @@
 
-txtBase = document.getElementById("txt_base");
+function calcularPrecio(){
+    obj = document.miform['ad'];
+    totalChecks = obj.length;
+    totalSumado = 0;
+    for( i=0; i<totalChecks; i++){ 
+        if( obj[i].checked == true ){
+            valor = obj[i].value;        
+            totalSumado = totalSumado + Number(valor);
+        }
+    }
+    document.getElementById('pTotal').innerHTML = totalSumado; 
+}
 
 $(document).ready(function(){
 
@@ -15,5 +26,7 @@ $(document).ready(function(){
 	 $('.close').click(function(){
 	 	$('section#form').hide();
 	 	$('#hTitle').empty();
+	 	$("#ad:checkbox").attr('checked', false);
+
 	 });    
 });
