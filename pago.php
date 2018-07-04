@@ -3,6 +3,7 @@
 ?>
 <?php 
 	// Bebidas
+	$hamburguesa = $_GET['p#hTitle'];
 	$cocacola = $_GET['cocacola'];
 	$pepsi = $_GET['pepsi'];
 	$sprite = $_GET['sprite'];

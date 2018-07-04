@@ -1,49 +1,22 @@
 <?php
 	include('includes/header.php');
 ?>
-
-
-	<section id="about" class="py-5">
-		<div class="container">
-			<h1 class="text-center">Nosotros</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et totam quisquam aspernatur rerum ut ipsum, tempore eius repellat non sunt amet ea. Consequuntur omnis dolore fugit veniam aspernatur natus, quod?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et totam quisquam aspernatur rerum ut ipsum, tempore eius repellat non sunt amet ea. Consequuntur omnis dolore fugit veniam aspernatur natus, quod?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et totam quisquam aspernatur rerum ut ipsum, tempore eius repellat non sunt amet ea. Consequuntur omnis dolore fugit veniam aspernatur natus, quod?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et totam quisquam aspernatur rerum ut ipsum, tempore eius repellat non sunt amet ea. Consequuntur omnis dolore fugit veniam aspernatur natus, quod?</p>
+<section id="about" class="py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h3 class="text-center" style="text-transform: uppercase;">Nosotros</h3>
+				<p>En Angus Garfield cada producto que sale de nuestra cocina es especial, aliñado con un estilo personal y utilizando, por supuesto, dedicación y calidad.</p>
+				<p>Acércate hasta Renedo de Piélagos para probar nuestra carta que ofrece desde hamburguesas y sándwiches de sabores únicos, raciones y bocadillos muy elaborados. Innovamos continuamente para que cada día encuentres en nuestro establecimiento alguna apetecible sorpresa que te abra el apetito . Si lo prefieres te lo ponemos para llevar.</p>
+				<p>Tan fácil como consultar la carta, decidirte, llamar y concretar la hora del pedido. Nos convertiremos en tu hamburguesería favorita.</p>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<img style="width: 100%" src="img/about.jpg" alt="Nosotros">
+			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<section id="form">
-			<form action="pago.html">
-				<span class="close">X</span>
-				<h5>Producto elegido: </h5>
-				<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-				<p id="hTitle"></p>
-				<div class="canHamb">
-					<label>Hamburguesa x: </label>
-					<input id="cHambuguesa" type="number" value="1">
-				</div>
-
-				<div class="bebidas col-md-6">
-					<label>Agregar bebida</label>
-					<input type="checkbox" name="bebida" value="Cocacola"> Cocacola<br>
-  					<input type="checkbox" name="bebida" value="Pepsi" checked> Pepsi<br>
-  					<input type="checkbox" name="bebida" value="Sprite"> Sprite<br>
-				</div>
-
-				<div class="adicionales col-md-6">
-					<label>Agregar Adicionales</label>
-					<input type="checkbox" name="adicional" value="Ensalada" checked> Ensalada<br>
-  					<input type="checkbox" name="adicional" value="Papitas"> Papitas<br>
-  					<input type="checkbox" name="adicional" value="Huevo"> Huevo<br>
-				</div>
-				<div class="pagar">
-					<p>Total a pagar: <b>s/. 600.00</b></p>
-					<input type="submit" value="Pagar">
-				</div>
-
-			</form>
-	</section>
 <?php
 	include('includes/footer.php');
 ?>
