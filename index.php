@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Tienda de Hamburguesas</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="logo text-center col-xl-12 ol-md-12 col-sm-12 col-xs-12">
-					<img src="img/logo.png">
-				</div>
-				<nav class="main-navigation relative col-xl-12 ol-md-12 col-sm-12 col-xs-12">
-				  <div class="container-fluid">
-				    <ul>
-				      <li class="active"><a href="index.html">Inicio</a></li>
-				      <li><a href="#">Nosotros</a></li>
-				      <li><a href="#">Contacto</a></li>
-				      <li><a href="login.html">Login</a></li>
-				    </ul>
-				  </div>
-				</nav>
-			</div>
-		</div>
-	</header>
+<?php
+	include('includes/header.php');
+?>
 
 	<section id="list">
 		<div class="container">
 			<div class="row p-5 r-0 l-0 productos">
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 1</h2>
+					<h2>Combo pechuga</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">9.90</b></span>
@@ -40,7 +15,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 2</h2>
+					<h2>Combo doble pechuga</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">10.90</b></span>
@@ -48,7 +23,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 3</h2>
+					<h2>Combo pollo apanado</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">9.90</b></span>
@@ -56,7 +31,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 4</h2>
+					<h2>Combo del rodeo duo</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">11.90</b></span>
@@ -64,7 +39,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 5</h2>
+					<h2>Combo pareja</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">9.90</b></span>
@@ -72,7 +47,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 6</h2>
+					<h2>Combo rodeo mix</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">12.90</b></span>
@@ -80,7 +55,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 7</h2>
+					<h2>Combo hamburguesa vaquera</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">14.90</b></span>
@@ -88,7 +63,7 @@
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
 					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
-					<h2>Producto 8</h2>
+					<h2>Combo hamburgesa vacana</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
 					    <span class="precio">S/. <b id="pCosto">16.90</b></span>
@@ -99,7 +74,7 @@
 	</section>
 
 	<section id="form">
-			<form name="miform" id="miform" action="pago.html">
+			<form name="miform" id="miform" action="pago.php" method="get">
 				<span class="close">X</span>
 				<h5>Producto elegido: </h5>
 				<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
@@ -111,16 +86,16 @@
 
 				<div class="bebidas col-md-6">
 					<label>Agregar bebida</label>
-					<input id="ad" type="checkbox" name="bebida-cocacola"  onclick="calcularPrecio()" value="1.00"> Cocacola (S/. 1.00)<br>
-  					<input id="ad" type="checkbox" name="bebida-pepsi"  onclick="calcularPrecio()" value="1.50"> Pepsi (S/. 1.50)<br>
-  					<input id="ad" type="checkbox" name="bebida-sprite"  onclick="calcularPrecio()" value="1.00"> Sprite (S/. 1.00)<br>
+					<input id="ad" type="checkbox" name="cocacola"  onclick="calcularPrecio()" value="1.00"> Cocacola (S/. 1.00)<br>
+  					<input id="ad" type="checkbox" name="pepsi"  onclick="calcularPrecio()" value="1.50"> Pepsi (S/. 1.50)<br>
+  					<input id="ad" type="checkbox" name="sprite"  onclick="calcularPrecio()" value="1.00"> Sprite (S/. 1.00)<br>
 				</div>
 
 				<div class="adicionales col-md-6">
 					<label>Agregar Adicionales</label>
-					<input id="ad" type="checkbox" name="adicional-ensalada"  onclick="calcularPrecio()" value="4.00"> Ensalada (S/. 4.00)<br>
-  					<input id="ad" type="checkbox" name="adicional-papitas" onclick="calcularPrecio()"  value="2.50"> Papitas (S/. 2.50)<br>
-  					<input id="ad" type="checkbox" name="adicional-huevo"  onclick="calcularPrecio()" value="1.00"> Huevo (S/. 1.00)<br>
+					<input id="ad" type="checkbox" name="ensalada"  onclick="calcularPrecio()" value="4.00"> Ensalada (S/. 4.00)<br>
+  					<input id="ad" type="checkbox" name="papitas" onclick="calcularPrecio()"  value="2.50"> Papitas (S/. 2.50)<br>
+  					<input id="ad" type="checkbox" name="huevo"  onclick="calcularPrecio()" value="1.00"> Huevo (S/. 1.00)<br>
 				</div>
 				<div class="pagar">
 					<p>Total a pagar: S/.  <b id="pTotal"></b></p>
@@ -129,24 +104,8 @@
 
 			</form>
 	</section>
-	<footer>
-		<div class="text-center">
-		  <div class="float-left col-xl-6 ol-md-6 col-sm-6 col-xs-6">
-		    <p>¡CONOCE NUESTRAS PROMOCIONES Y LANZAMIENTOS</p>
-		  </div>
-		  <div class="float-right col-xl-6 ol-md-6 col-sm-6 col-xs-6">
-		    <ul class="menu_footer">
-		      <li><a href="#">Términos y condiciones de uso</a></li>
-		      <li><a href="#">Políticas de privacidad</a></li>
-		      <li><a href="#">Trabaja con nosotros</a></li>
-		    </ul>
-		  </div>
-		</div>
-	</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
+	
+<?php
+	include('includes/footer.php');
+?>
+	

@@ -55,7 +55,8 @@
 		    color: #bb1e11;
 		}
 		.views-row h2 {
-		    font-size: 20px;
+		    font-size: 15px;
+		    text-transform: uppercase;
 		    color: #525252;
 		    margin-top: 7px;
 		}
@@ -88,7 +89,8 @@
 		}
 
 		p#hTitle {
-		    font-size: 30px;
+		    font-size: 27px;
+		    text-transform: uppercase;
 		    color: #333;
 		    font-weight: 700;
 		}
@@ -136,6 +138,7 @@
 		#form-confir label {
 		    width: 150px;
 		}
+
 		form#form-confir {
 		    background: #ccc;
 		    padding: 50px 0;

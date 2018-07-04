@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Tienda de Hamburguesas</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="logo text-center col-xl-12 ol-md-12 col-sm-12 col-xs-12">
-					<img src="img/logo.png">
-				</div>
-				<nav class="main-navigation relative col-xl-12 ol-md-12 col-sm-12 col-xs-12">
-				  <div class="container-fluid">
-				    <ul>
-				      <li class="active"><a href="index.html">Inicio</a></li>
-				      <li><a href="#">Nosotros</a></li>
-				      <li><a href="#">Contacto</a></li>
-				      <li><a href="login.html">Login</a></li>
-				    </ul>
-				  </div>
-				</nav>
-			</div>
-		</div>
-	</header>
+<?php
+	include('includes/header.php');
+?>
+
 
 	<section id="about" class="py-5">
 		<div class="container">
@@ -68,24 +44,7 @@
 
 			</form>
 	</section>
-	<footer>
-		<div class="text-center">
-		  <div class="float-left col-xl-6 ol-md-6 col-sm-6 col-xs-6">
-		    <p>¡CONOCE NUESTRAS PROMOCIONES Y LANZAMIENTOS</p>
-		  </div>
-		  <div class="float-right col-xl-6 ol-md-6 col-sm-6 col-xs-6">
-		    <ul class="menu_footer">
-		      <li><a href="#">Términos y condiciones de uso</a></li>
-		      <li><a href="#">Políticas de privacidad</a></li>
-		      <li><a href="#">Trabaja con nosotros</a></li>
-		    </ul>
-		  </div>
-		</div>
-	</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
+<?php
+	include('includes/footer.php');
+?>
+	
