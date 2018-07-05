@@ -77,7 +77,9 @@
 			<form name="miform" id="miform" action="pago.php" method="get">
 				<span class="close">X</span>
 				<h5>Producto elegido: </h5>
-				<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+				<div id="box-imgs">
+					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+				</div>
 				<p id="hTitle"></p>
 				<div class="canHamb">
 					<label>Cantidad:</label>

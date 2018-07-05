@@ -19,7 +19,7 @@
 			<div class="box-confirm">
 				<?php
 				   echo "Muchas gracias por la compra.<br>"; 
-				   echo ".<br>"; 
+				   echo "<br>"; 
 				    if (isset($cocacola)) {
 				   		echo "Gaseosa Cocacola:     S/.". $cocacola . "<br>";
 					}
@@ -44,7 +44,7 @@
 		<div class="datos-pago">
 			<h1>Ingresa tus datos de pago</h1>
 			<br>
-			<form action="" id="form-confir">
+			<form action="gracias.php" id="form-confir">
 				<label for="txtNombre">Tarjeta</label>
 				<input id="txtNombre" placeholder="" type="text">
 				<br>

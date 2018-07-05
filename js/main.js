@@ -17,13 +17,7 @@ $(document).ready(function(){
 });
 
 
-var productos = document.getElementById("itemPro");
-// console.log (productos);
 
-for (var i = 0; i < productos.length; i++) {
-    var vista = productos[i];
-    console.log(vista);
-}
 
 
 function calcularPrecio(){
@@ -32,9 +26,29 @@ function calcularPrecio(){
     totalChecks = obj.length;
     totalSumado = 0;
     for( i=0; i<totalChecks; i++){ 
+        // switch(i) {
+        //         case 0:
+        //             if( obj[i].checked == true ){
+        //                 document.getElementById('box-imgs').innerHTML += '<ol><li>html PIakahcu</li></ol>';
+        //             }else{
+        //                 document.getElementById('box-imgs').remove;    
+        //             }
+        //             break;
+        //         case 1:
+        //             if( obj[i].checked == true ){
+        //                 document.getElementById('box-imgs').innerHTML += '<ol><li>html datsadasdsada</li></ol>';
+        //             }else{
+
+        //             }
+        //             break;
+        //         default:
+        //     }
         if( obj[i].checked == true ){
+
             valor = obj[i].value;        
             totalSumado = totalSumado + Number(valor);
+
+            
         }
     }
     document.getElementById('pTotal').innerHTML = totalSumado; 
