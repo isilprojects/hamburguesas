@@ -5,13 +5,16 @@ $(document).ready(function(){
             $(this).click(function(){
             $('section#form').show();
             $('#hTitle').append($(this).find('h2').text());
-            $('#pTotal').append($(this).find('#pCosto').text());
+            $('#pTotal').append($(this).find('#pCosto').val());
+            var imgProducto = $(this).find('img').attr('src')
+            $('#box-imgs').append("<div id='imgV'><img style='width: 200px;height: 160px;object-fit: cover;' src='" + imgProducto + "'></div>");
         });
     });
     $('.close').click(function(){
         $('section#form').hide();
         $('#hTitle').empty();
         $('#pTotal').empty();
+        $('#box-imgs').empty();
         // $("#ad:checkbox").attr('checked', false);
     });    
 });
@@ -31,7 +34,6 @@ function calcularPrecio(){
         //             if( obj[i].checked == true ){
         //                 document.getElementById('box-imgs').innerHTML += '<ol><li>html PIakahcu</li></ol>';
         //             }else{
-        //                 document.getElementById('box-imgs').remove;    
         //             }
         //             break;
         //         case 1:
@@ -51,7 +53,7 @@ function calcularPrecio(){
             
         }
     }
-    document.getElementById('pTotal').innerHTML = totalSumado; 
+    document.getElementById('pTotal').value = totalSumado; 
 }
 
 

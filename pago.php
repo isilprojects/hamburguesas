@@ -3,15 +3,21 @@
 ?>
 <?php 
 	// Bebidas
-	$hamburguesa = $_GET['p#hTitle'];
-	$cocacola = $_GET['cocacola'];
-	$pepsi = $_GET['pepsi'];
-	$sprite = $_GET['sprite'];
+	$hamburguesa = $_POST['p#hTitle'];
+	$cocacola = $_POST['cocacola'];
+	$pepsi = $_POST['pepsi'];
+	$sprite = $_POST['sprite'];
 
 	// Adicionales
-	$ensalada = $_GET['ensalada'];
-	$papitas = $_GET['papitas'];
-	$huevo = $_GET['huevo'];
+	$ensalada = $_POST['ensalada'];
+	$papitas = $_POST['papitas'];
+	$huevo = $_POST['huevo'];
+
+	//Precio total
+	$precio = $_POST['pTotal'];
+
+
+
 ?>
 	<div class="container">
 		<div class="resumen-pedido">
@@ -33,11 +39,12 @@
 				   		echo "Adicinal Ensalada:     S/.". $ensalada . "<br>";
 					}
 					if (isset($papitas)) {
-				   		echo "Gaseosa Papitas:     S/.". $papitas . "<br>";
+				   		echo "Adicinal Papitas:     S/.". $papitas . "<br>";
 					}
 					if (isset($huevo)) {
-				   		echo "Gaseosa Huevo:     S/.". $huevo . "<br>";
+				   		echo "Adicinal Huevo:     S/.". $huevo . "<br>";
 					}
+					echo "<div class='precioTotal'><h3>Precio total de la compra</h3><b>S/. " .$precio."</b></div>";
 				?>
 			</div>
 		</div>

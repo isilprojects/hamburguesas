@@ -6,7 +6,7 @@
 		<div class="container">
 			<div class="row p-5 r-0 l-0 productos">
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/cpechuga.png" alt="Hamburguesa combo 1">
 					<h2>Combo pechuga</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -14,7 +14,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/cdoblepechuga.png" alt="Hamburguesa combo 1">
 					<h2>Combo doble pechuga</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -22,7 +22,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/polloapanado.png" alt="Hamburguesa combo 1">
 					<h2>Combo pollo apanado</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -30,7 +30,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/rodeoduo.png" alt="Hamburguesa combo 1">
 					<h2>Combo del rodeo duo</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -38,7 +38,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/combopareja.png" alt="Hamburguesa combo 1">
 					<h2>Combo pareja</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -46,7 +46,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/rodeomix.png" alt="Hamburguesa combo 1">
 					<h2>Combo rodeo mix</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -54,7 +54,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/vaquera.png" alt="Hamburguesa combo 1">
 					<h2>Combo hamburguesa vaquera</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -62,7 +62,7 @@
         			</div>
 				</div>
 				<div  id="itemPro" class="views-row text-center col-md-3 col-sm-6 col-xs-12">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<img src="img/producto/vacana.png" alt="Hamburguesa combo 1">
 					<h2>Combo hamburgesa vacana</h2>
 					<div class="precio-box">
 						<span class="labelprecio">Precio: </span>
@@ -74,11 +74,11 @@
 	</section>
 
 	<section id="form">
-			<form name="miform" id="miform" action="pago.php" method="get">
+			<form name="miform" id="miform" action="pago.php" method="POST">
 				<span class="close">X</span>
 				<h5>Producto elegido: </h5>
 				<div id="box-imgs">
-					<img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1">
+					<!-- <img src="img/producto/hamburguesa.jpg" alt="Hamburguesa combo 1"> -->
 				</div>
 				<p id="hTitle"></p>
 				<div class="canHamb">
@@ -100,7 +100,10 @@
   					<input id="ad" type="checkbox" name="huevo"  onclick="calcularPrecio()" value="1.00"> Huevo (S/. 1.00)<br>
 				</div>
 				<div class="pagar">
-					<p>Total a pagar: S/.  <b id="pTotal"></b></p>
+					<div style="width: 100%;">
+						<label for="pTotal">Total a pagar: S/.</label>
+						<input id="pTotal" name="pTotal" type="text" value="0.0">
+					</div>
 					<input type="submit" value="Pagar">
 				</div>
 
